@@ -53,7 +53,7 @@ img {
   justify-content: space-between;
   min-width: 200px;
   height: 400px;
-  background: linear-gradient(90deg, #434343, #272727);
+  background: linear-gradient(90deg, #434343, #252525);
   border-radius: 20px;
   padding: 1rem;
   box-shadow: -84px 9px 83px -32px rgba(0,0,0,0.6);
@@ -62,11 +62,16 @@ img {
 }
 
 .card {
+  position: relative;
   left: 0;
   margin-left: -1.5rem;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
+.card:hover {
+  transform: translateX(-1rem) translateY(-1rem);
+  z-index: 0;
+}
 .card-one-container {
   padding: 5px;
   background: linear-gradient(140deg, #ff8800, red, teal 80%);
